@@ -1,4 +1,4 @@
-<h1><b>A Blog Website where users can post and view their blogs.</b></h1>
+<h3><b>A Blog Website where users can post and view their blogs.</b></h3>
 <hr>
 
 <h4>Database Used: MongoDB </h4>
