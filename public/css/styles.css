@@ -6,24 +6,56 @@ html {
 .container-fluid {
     padding-top: 70%;
     padding-bottom: 70%;
+    
 }
 .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    font-family: 'Merriweather', serif;
+    padding-top: 25px;
+    padding-bottom: 25px;
     border: 0;
     border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
+    margin-bottom: 50px;
+    font-size: 15px;
     letter-spacing: 5px;
+    font-weight: bolder;
 }
 .navbar-nav  li a:hover {
-    color: #1abc9c !important;
+    color: #B495AB !important;
 }
-
+h4{
+  font-family: 'Merriweather', serif; 
+  font-weight: bolder;
+  color: #B495AB !important;
+}
+h2{
+  font-family: 'Merriweather', serif; 
+  font-weight: bolder;
+  color: #B495AB !important;
+}
+.l{
+  font-family: 'Merriweather', serif; 
+  font-weight: bold;
+  font-size: medium;
+  color: #B495AB !important;
+}
+.bt{
+  background-color:#B495AB !important;
+  color:#fff;
+  font-family: 'Merriweather', serif; 
+  
+}
+.bt:hover{
+  color: #fff;
+}
 .footer-padding {
 	padding-top: 10%;
 }
-
+.para{
+  font-family: 'Merriweather', serif; 
+ 
+  font-size: medium;
+  color: #453D41
+}
 .footer {
   
 	position: absolute;
@@ -31,11 +63,16 @@ html {
 	bottom: 0;
 	width: 100%;
 	height: 60px;
-	background-color: #1abc9c;
+	background-color: #B495AB;
 }
 
 .footer p {
-
-	font-size: 12px;
+  letter-spacing: 2px;
+  font-family: 'Merriweather', serif;
+	font-size: 15px;
+  color: #fff;
+  font-weight: bolder;
+}
+.heart{
   color: #fff;
 }

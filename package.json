@@ -9,10 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "lodash": "^4.17.11",
-    "mongoose": "^5.3.6"
+    "mongoose": "^5.12.14",
+    "nodemon": "^2.0.7"
   }
 }
