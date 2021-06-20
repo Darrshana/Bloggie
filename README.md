@@ -5,5 +5,5 @@
 
 <h4>Database driver: Mongoose </h4>
 
-<h4>Website was built HTML,CSS,Bootstrap,Ejs,Node JS and Express.</h4>
-<h4>Can be hosted locally.</h4>
+<h4>Website was built using HTML,CSS,Bootstrap,Ejs,Node JS and Express.</h4>
+
