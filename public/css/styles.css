@@ -76,3 +76,13 @@ h2{
 .heart{
   color: #fff;
 }
+.dir{
+  float: right;
+}
+
+@media only screen and (max-width:769px){
+  .dir{
+   float:none;
+   display:inline;
+  }
+}
