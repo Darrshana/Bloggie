@@ -48,14 +48,22 @@ app.post("/compose", function(req, res){
 
   post.save(function(err){
     if (!err){
-        res.redirect("/");
+        res.redirect("/home");
     }
     else{
       console.log(err);
     }
   });
 });
-
+app.post("/", function(req, res){
+const p = req.body.post;
+Post.findOne( {title:p }, function(err, post){
+  res.render("post", {
+    title: post.title,
+    content: post.content
+  });
+});
+});
 app.get("/posts/:postId", function(req, res){
 
 const requestedPostId = req.params.postId;
