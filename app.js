@@ -47,23 +47,30 @@ app.post("/compose", function(req, res){
 
 
   post.save(function(err){
-    if (!err){
-        res.redirect("/home");
-    }
-    else{
-      console.log(err);
-    }
+    
+        res.redirect("/");
+    
   });
 });
 app.post("/", function(req, res){
 const p = req.body.post;
+
 Post.findOne( {title:p }, function(err, post){
-  res.render("post", {
-    title: post.title,
-    content: post.content
+  if(post!=null){
+      res.render("post", {
+        title: post.title,
+        content: post.content
+      },function(err){
+        res.redirect("/posts/"+p);
+      });
+    }
+    else{
+      res.redirect("/");
+    }
   });
-});
-});
+  
+  });
+
 app.get("/posts/:postId", function(req, res){
 
 const requestedPostId = req.params.postId;
@@ -83,7 +90,16 @@ app.get("/about", function(req, res){
 app.get("/contact", function(req, res){
   res.render("contact", {contactContent: contactContent});
 });
+app.post("/posts/:postId", function(req, res){
 
+  const requestedPostId = req.params.postId;
+  Post.deleteOne( {title:requestedPostId }, function(err, post){
+      
+        res.redirect("/");
+      
+    });
+  
+  });
 
 app.listen(process.env.PORT || 3000, function() {
   console.log("Server started on port 3000");
