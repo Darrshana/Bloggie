@@ -50,6 +50,9 @@ app.post("/compose", function(req, res){
     if (!err){
         res.redirect("/");
     }
+    else{
+      console.log(err);
+    }
   });
 });
 
