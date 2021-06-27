@@ -38,6 +38,7 @@ h2{
   font-weight: bold;
   font-size: medium;
   color: #B495AB !important;
+
 }
 .bt{
   background-color:#B495AB !important;
@@ -49,7 +50,8 @@ h2{
   color: #fff;
 }
 .footer-padding {
-	padding-top: 10%;
+	padding-top: 20px;
+  margin-top: 50px;
 }
 .para{
   font-family: 'Merriweather', serif; 
