@@ -56,7 +56,8 @@ h3{
 .para{
   font-family: 'Merriweather', serif; 
   font-size: 13px;
-  color: #453D41
+  color: #453D41;
+  text-align: justify;
 }
 .footer {
   
